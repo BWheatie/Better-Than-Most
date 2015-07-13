@@ -4,7 +4,7 @@ activate :directory_indexes
 activate :automatic_image_sizes
 
 configure :development do
-   activate :livereload
+  activate :livereload
 end
 
 set :css_dir, 'stylesheets'
@@ -19,5 +19,6 @@ configure :build do
   activate :relative_assets
 end
 activate :deploy do |deploy|
-    deploy.method = :git
+  deploy.method = :git
+  deploy.build_before = true
 end

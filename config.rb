@@ -1,3 +1,4 @@
+page "CNAME", layout: false
 ###
 # Compass
 ###

@@ -3,6 +3,7 @@ page "CNAME", layout: false
 activate :automatic_image_sizes
 activate :blog do |blog|
   blog.sources = "blog/{year}-{month}-{day}-{title}.html"
+  blog.layout = "blog"
 end
 activate :directory_indexes
 

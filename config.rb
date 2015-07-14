@@ -1,7 +1,10 @@
 page "CNAME", layout: false
 
-activate :directory_indexes
 activate :automatic_image_sizes
+activate :blog do |blog|
+  blog.sources = "blog/{year}-{month}-{day}-{title}.html"
+end
+activate :directory_indexes
 
 configure :development do
   activate :livereload

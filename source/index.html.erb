@@ -1,2 +1,15 @@
 <h1>Bootstrap starter template</h1>
 <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+
+<% blog.articles.each do |article| %>
+  <article>
+    <h1>
+      <a href="<%= article.url %>"><%= article.title %></a>
+      <time><%= article.date.strftime('%b %e %Y') %></time>
+    </h1>
+
+    <%= article.summary %>
+
+    <a href="<%= article.url %>">Read more</a>
+  </article>
+<% end %>

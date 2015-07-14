@@ -4,9 +4,11 @@ date: 2015-07-14 14:37 UTC
 tags:
 ---
 
-#Header Goes Here
+clickbait lead paragraph
 
-New paragraph with a fun [link](http://google.com)
+READMORE
+
+New paragraph with a fun [potato](http://google.com)
 
 * stuff
 * stuff

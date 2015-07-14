@@ -27,7 +27,7 @@
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
           <%= active_link_to 'Home', '/' %>
-          <%= active_link_to 'About', 'about' %>
+
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sports <span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -43,6 +43,21 @@
               <li><a href="#">Opinions</a></li>
             </ul>
           </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Authors <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Ben Wheat</a></li>
+              <li><a href="#">Slave #1</a></li>
+              <li><a href="#">Slave #2</a></li>
+              <li><a href="#">Slave #3</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Intern #1</a></li>
+              <li><a href="#">Intern #2</a></li>
+              <li><a href="#">Intern #3</a></li>
+            </ul>
+          </li>
+          <%= active_link_to 'About', 'about' %>
+          <%= active_link_to 'Contact', 'contact' %>
         </ul>
       </div><!--/.nav-collapse -->
     </div>

@@ -4,7 +4,9 @@ activate :automatic_image_sizes
 activate :blog do |blog|
   blog.sources = "blog/{year}-{month}-{day}-{title}.html"
   blog.layout = "blog"
-  blog.taglink = "categories/{tag}.html"
+  blog.taglink = "tags/{tag}.html"
+  blog.tag_template = "tag.html"
+
 end
 activate :directory_indexes
 

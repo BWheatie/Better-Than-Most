@@ -1,0 +1,56 @@
+| <!doctype html>
+html
+  head
+    meta[charset="utf-8"]
+    meta[content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"]
+    meta[name="viewport" content="width=device-width, initial-scale=1"]
+    title = current_page.data.title || "Better Than Most"
+    = stylesheet_link_tag "all"
+    = javascript_include_tag  "all"
+  body class="#{page_classes}"
+    nav
+      ul
+        li = active_link_to 'Home', '/'
+        li
+          | Sports
+          ul
+            li
+              a[href="#"]
+                | NFL
+            li
+              a[href="#"]
+                | MLB
+            li
+              a[href="#"]
+                | NBA
+            li
+              a[href="#"]
+                | NHL
+            li
+              a[href="#"]
+                | Golf
+            li
+              a[href="#"]
+                | Soccer
+            li
+              a[href="#"]
+                | Outdoors
+            li
+              a[href="#"]
+                | Action
+            li
+                a[href="#"]
+                  | Opinions
+        li
+          | Authors
+          ul
+            li
+              a[href="#"]
+                | Ben Wheat
+            li
+              a[href="#"]
+                | Intern #3
+        = active_link_to 'About', 'about'
+        = active_link_to 'Contact', 'contact'
+    .container
+      = yield

@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 gem "bourbon"
 gem "neat"
 gem "bitters"
+gem "slim"
 gem "middleman", "~>3.3.12"
 gem "jquery-middleman"
 # Live-reloading plugin

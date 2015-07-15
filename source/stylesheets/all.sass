@@ -3,13 +3,37 @@
 @import "base/base"
 @import "neat"
 
+$content-background: #EEE
+$content-color: #000
+$nav-background: #AAA
+$nav-font-color: #FFF
+
 //refills
 @import "refills/navigation"
 
-#logo
-  margin-top: 10px
-  margin-bottom: 10px
+li.nav-link.logo a
+  font-size: 20pt
+  font-weight: bold
+
 time
   font-size: 14pt
   color: #999
   margin-bottom: 20px
+
+article
+  background-color: $content-background
+  margin: 1em
+  padding: 1em
+
+a article
+  color: $content-color
+
+.container
+  @include outer-container
+  padding: 1em
+  #sidebar
+    @include span-columns(3)
+    background-color: $content-background
+    padding: 1em
+  #articles
+    @include span-columns(9)

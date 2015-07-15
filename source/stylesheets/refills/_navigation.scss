@@ -1,11 +1,10 @@
 .centered-navigation {
+  $base-font-color: $nav-font-color;
   $base-border-radius: 3px !default;
-  $dark-gray: #333 !default;
   $large-screen: em(860) !default;
-  $base-font-color: $dark-gray !default;
   $centered-navigation-padding: 1em;
   $centered-navigation-logo-height: 2em;
-  $centered-navigation-background: #E0FF00;
+  $centered-navigation-background: $nav-background;
   $centered-navigation-color: transparentize($base-font-color, 0.3);
   $centered-navigation-color-hover: $base-font-color;
   $centered-navigation-height: 60px;
@@ -113,6 +112,7 @@
     z-index: 9999;
 
     a {
+      vertical-align: middle;
       color: $centered-navigation-color;
       display: inline-block;
       outline: none;
@@ -138,7 +138,6 @@
   li.logo.nav-link {
     display: none;
     line-height: 0;
-
     @include media($large-screen) {
       display: inline;
     }

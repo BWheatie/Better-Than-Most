@@ -51,13 +51,14 @@
     border-top: $dropdown-border;
     border-right: $dropdown-border;
     border-bottom: $dropdown-border;
+    border-left: $dropdown-border;
     cursor: pointer;
     float: right;
     font-size: 0.7em;
     font-weight: 800;
     line-height: $dropdown-height;
     margin: 0;
-    padding: 0 ($dropdown-padding * 2.5) 0 ($dropdown-padding / 2);
+    padding: 0 ($dropdown-padding * 2.5) 0 ($dropdown-padding);
     position: relative;
 
     @include media($large-screen) {

@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".dropdown-button").click(function(){var n,o;n=$(this),o=n.siblings(".dropdown-menu"),o.toggleClass("show-menu"),o.children("li").click(function(){o.removeClass("show-menu"),n.html($(this).html())})})});

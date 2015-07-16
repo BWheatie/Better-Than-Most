@@ -1,0 +1,1 @@
+$(document).ready(function(){var e=$("#js-centered-navigation-mobile-menu").unbind();$("#js-centered-navigation-menu").removeClass("show"),e.on("click",function(e){e.preventDefault(),$("#js-centered-navigation-menu").slideToggle(function(){$("#js-centered-navigation-menu").is(":hidden")&&$("#js-centered-navigation-menu").removeAttr("style")})})});

@@ -1,7 +1,7 @@
 ---
 title: Fun New Article
-date: 2015-07-16 14:09 UTC
-tags:
+date: 2015-07-16 14:14 UTC
+tags: good
 ---
 
-This is a terrible article, please don't publish it.
+This one is way way better

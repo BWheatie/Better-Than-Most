@@ -9,10 +9,11 @@
     li Less hot article
     li Less hot article
     li Less hot article
-#articles
-  - blog.articles.each do |article|
+
+#article
+- blog.articles.each do |article|
     a href="#{article.url}"
-      article
+      = partial "homepagearticle"
         h1 = article.title
-        time = article.date.strftime('%b %e %Y')
-        = article.summary
+          time = article.date.strftime('%b %e %Y')
+          2= article.summary
